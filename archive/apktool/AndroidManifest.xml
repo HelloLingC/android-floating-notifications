@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.lingc.notification" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <application android:allowBackup="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.lingc.notification.MyApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <receiver android:enabled="true" android:exported="true" android:name="com.lingc.notification.SMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.lingc.notification.ui.intro.IntroActivity"/>
+        <activity android:label="程序捕捉到异常" android:name="com.lingc.notification.ui.activities.ExceptionActivity"/>
+        <activity android:label="关键词屏蔽" android:name="com.lingc.notification.ui.activities.KeyPreventActivity"/>
+        <activity android:label="修改悬浮位置" android:name="com.lingc.notification.ui.activities.EditPosActivity"/>
+        <activity android:name="com.lingc.notification.ui.activities.BaseActivity"/>
+        <activity android:name="com.lingc.notification.ui.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="捐赠" android:name="com.lingc.notification.ui.activities.DoateActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="黑名单" android:name="com.lingc.notification.ui.activities.WhiteListActivity"/>
+        <activity android:label="通知管理" android:name="com.lingc.notification.ui.activities.ManagerActivity"/>
+        <activity android:label="@string/app_name" android:name="com.lingc.notification.ui.activities.MainActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <service android:label="自定义通知显示" android:name="com.lingc.notification.NotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/app_name" android:name="com.lingc.notification.AccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessible_service_config"/>
+        </service>
+    </application>
+</manifest>
