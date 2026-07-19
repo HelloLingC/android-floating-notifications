@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0sp" android:text="很遗憾程序发生了崩溃，但你可以提供给开发者以下崩溃日志：" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@+id/exception_info_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="17.0sp" />
+    </ScrollView>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:theme="@style/PrimaryButton" android:id="@+id/exception_exit_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出" />
+        <Button android:theme="@style/PrimaryButton" android:id="@+id/exception_copy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="复制" />
+    </LinearLayout>
+</LinearLayout>

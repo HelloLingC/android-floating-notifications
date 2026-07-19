@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/pay_lay" android:background="#ff35b751" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="30.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/pay_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="微信" />
+    <ImageView android:id="@+id/pay_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dp" android:src="@mipmap/wechat" />
+    <TextView android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请截图此页面，在扫一扫中从图库选择二维码\n\n最好备注上你的名字，以便后续公开处刑（划去）" />
+    <Button android:id="@+id/pay_change_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转换支付方式" />
+</LinearLayout>

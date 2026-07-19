@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="悬浮模式">
+        <ListPreference android:entries="@array/array_notificat_ways_entries" android:title="悬浮模式选择" android:key="notificatWays" android:defaultValue="floating" android:entryValues="@array/array_notificat_ways_entries_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/perf_main_floating_settings_category">
+        <Preference android:title="@string/perf_main_global_title" android:key="globalSettings" />
+        <Preference android:title="@string/perf_main_floating_title" android:key="floatingSettings" />
+        <Preference android:title="@string/perf_main_tile_title" android:key="tileSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/perf_main_test_category">
+        <Preference android:title="@string/perf_main_sendfloating_title" android:key="sendFloatingTest" />
+        <Preference android:title="@string/perf_main_sendtile_title" android:key="sendTileTest" />
+    </PreferenceCategory>
+    <PreferenceCategory android:enabled="false" android:title="测试性功能" android:key="betaFuncCategory">
+        <SwitchPreference android:title="兼容模式" android:key="notifitSuperMode" android:summary="当应用失效或经常失效可使用兼容模式" />
+    </PreferenceCategory>
+</PreferenceScreen>

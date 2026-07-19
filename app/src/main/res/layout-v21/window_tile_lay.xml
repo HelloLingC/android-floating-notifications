@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.limuyang2.shadowlayoutlib.ShadowLinearLayout android:id="@+id/window_root_lay" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="3.0dp" app:l_radius="8.0dp" app:l_shadowAlpha="0.2" app:l_shadowElevation="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@+id/window_background_lay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.lingc.notification.widgets.tile.RoundImageView android:id="@+id/window_icon_img" android:layout_width="42.0dp" android:layout_height="42.0dp" android:layout_margin="3.0dp" android:contentDescription="@string/app_name" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/window_messgae_lay" android:padding="3.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+            <TextView android:textColor="#000000" android:id="@+id/window_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:id="@+id/window_content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</top.limuyang2.shadowlayoutlib.ShadowLinearLayout>

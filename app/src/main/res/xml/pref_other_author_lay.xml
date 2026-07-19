@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/about">
+        <Preference android:title="@string/about_developer" android:summary="LingC" />
+        <Preference android:title="@string/about_version" android:key="version" />
+        <Preference android:title="@string/about_build_time" android:key="buildTime" />
+    </PreferenceCategory>
+</PreferenceScreen>

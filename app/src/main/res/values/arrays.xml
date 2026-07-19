@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_animations_entries">
+        <item>默认</item><item>Activity</item><item>Toast</item><item>Dialog</item><item>InputMethod</item>
+    </string-array>
+    <string-array name="array_animations_entries_values">
+        <item>default</item><item>activity</item><item>toast</item><item>dialog</item><item>inputmethod</item>
+    </string-array>
+    <string-array name="array_notificat_style_entries">
+        <item>默认 | 简白</item><item>夜间 | 酷黑</item><item>自定义</item>
+    </string-array>
+    <string-array name="array_notificat_style_entries_values">
+        <item>white</item><item>dark</item><item>asswecan</item>
+    </string-array>
+    <string-array name="array_notificat_ways_entries">
+        <item>默认模式</item><item>磁贴模式</item>
+    </string-array>
+    <string-array name="array_notificat_ways_entries_values">
+        <item>floating</item><item>tile</item>
+    </string-array>
+</resources>

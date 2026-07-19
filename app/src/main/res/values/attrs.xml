@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowLinearLayout">
+        <attr name="l_radius" format="dimension" />
+        <attr name="l_shadowAlpha" format="float" />
+        <attr name="l_shadowElevation" format="dimension" />
+        <attr name="l_outerNormalColor" format="color" />
+    </declare-styleable>
+</resources>

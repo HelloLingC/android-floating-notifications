@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="30.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tips：横屏与竖屏的位置是独立存储的，且两个模式通用。" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15.0dp">
+        <Button android:theme="@style/PrimaryButton" android:id="@+id/editpos_floating_mode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用 默认模式 模板" />
+        <Button android:theme="@style/PrimaryButton" android:id="@+id/editpos_tile_mode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用 磁贴模式 模板" />
+    </LinearLayout>
+    <Switch android:id="@+id/editpos_hoz_swh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改横屏位置" />
+</LinearLayout>

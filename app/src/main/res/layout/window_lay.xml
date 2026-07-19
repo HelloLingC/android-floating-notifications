@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.limuyang2.shadowlayoutlib.ShadowLinearLayout android:id="@+id/window_top_lay" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" app:l_radius="8.0dp" app:l_shadowAlpha="0.2" app:l_shadowElevation="8.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:padding="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/window_app_img" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginRight="11.0dp" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="#000000" android:id="@+id/window_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App name" app:autoSizeTextType="uniform" />
+            <TextView android:textColor="#ff888888" android:id="@+id/window_text_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text" android:maxLength="35" app:autoSizeTextType="uniform" />
+        </LinearLayout>
+    </LinearLayout>
+</top.limuyang2.shadowlayoutlib.ShadowLinearLayout>

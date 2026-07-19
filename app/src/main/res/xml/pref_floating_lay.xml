@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="样式">
+        <EditTextPreference android:title="悬浮圆角弧度" android:key="notifitRadiu" android:defaultValue="50" android:inputType="number" />
+        <EditTextPreference android:title="悬浮阴影 Alpha" android:key="notifitAlpha" android:summary="用于调整悬浮通知阴影的明显程度" android:defaultValue="0.45" android:inputType="numberDecimal" />
+        <EditTextPreference android:title="悬浮阴影大小" android:key="notifitShadowSize" android:defaultValue="73" android:inputType="number" />
+        <EditTextPreference android:title="设置悬浮最大的长" android:key="notifitMaxWidth" android:summary="如果设置为 0 则根据屏幕大小自适应" android:defaultValue="0" android:inputType="number" />
+        <ListPreference android:entries="@array/array_animations_entries" android:title="动画效果" android:key="notifitAnimations" android:defaultValue="default" android:entryValues="@array/array_animations_entries_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="高级">
+        <EditTextPreference android:title="设置悬浮显示时长" android:key="notifitShowTime" android:summary="以毫秒（ms）为单位，1000ms=1s" android:defaultValue="3000" android:inputType="number" />
+    </PreferenceCategory>
+</PreferenceScreen>

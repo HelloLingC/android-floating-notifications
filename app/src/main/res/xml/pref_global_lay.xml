@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/perf_global_func_category">
+        <Preference android:title="@string/perf_global_splash_title" android:key="permissionSplash" />
+        <Preference android:title="短信验证码复制" />
+        <Preference android:title="@string/perf_global_keypre_title" android:key="keyPrevent" android:summary="@string/perf_global_keypre_summary" />
+        <Preference android:title="@string/perf_global_blacklist_title" android:key="notifitWhiteList" android:summary="@string/perf_global_keypre_summary" />
+        <Preference android:title="@string/perf_global_manager_title" android:key="notifitManager" android:summary="@string/perf_global_manager_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="样式">
+        <ListPreference android:entries="@array/array_notificat_style_entries" android:title="悬浮样式" android:key="notificatStyle" android:defaultValue="white" android:entryValues="@array/array_notificat_style_entries_values" />
+        <EditTextPreference android:enabled="false" android:title="设置悬浮背景颜色" android:key="backgroundColor" android:summary="要使用以下选项请将悬浮样式设置为自定义" android:defaultValue="#FFFFFF" />
+        <EditTextPreference android:enabled="false" android:title="设置悬浮标题文字颜色" android:key="titleColor" android:defaultValue="#000000" />
+        <EditTextPreference android:enabled="false" android:title="设置悬浮内容文字颜色" android:key="messageColor" android:defaultValue="#212121" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="高级">
+        <Preference android:title="修改悬浮位置" android:key="notificatEditPos" />
+        <EditTextPreference android:title="屏幕内最多可显示的数量" android:key="mostShowNum" android:summary="默认为6，超过此数量的悬浮则加入待显示列表" android:defaultValue="6" android:inputType="number" />
+        <SwitchPreference android:title="多条通知依次向下显示" android:key="notificatShowUp" android:summary="不勾选则向上显示" android:defaultValue="true" />
+        <SwitchPreference android:title="允许悬浮通知响应点击事件" android:key="notificatCanClick" android:summary="状态栏中的通知永远可以响应" android:defaultValue="true" />
+        <SwitchPreference android:title="在状态栏上显示通知" android:key="notifitShowInBar" android:summary="避免错过重要通知，默认关闭" android:defaultValue="false" />
+        <SwitchPreference android:title="输入法防挡" android:key="isAntiBlock" android:defaultValue="true" />
+        <SwitchPreference android:title="隐藏后台任务卡片" android:key="hideInBackground" android:summary="将应用锁定后台后，可以打开此选项在任务栏中隐藏" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

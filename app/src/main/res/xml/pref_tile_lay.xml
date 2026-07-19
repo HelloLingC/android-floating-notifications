@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="设置">
+        <SwitchPreference android:title="显示磁贴时默认展开通知内容" android:key="open" android:summary="不勾选则默认缩放内容" />
+    </PreferenceCategory>
+</PreferenceScreen>
